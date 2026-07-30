@@ -1,5 +1,7 @@
 # State Management Playbook
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Web Reactions](https://api.webreactions.app/badge/github/khasky/state-management-playbook.svg)](https://webreactions.app/?utm_source=github&utm_channel=repository&utm_medium=state-management-playbook)
+
 Practical guide to client state architecture in React: state taxonomy, MobX, store design, and choosing the right state layer.
 
 > *If I were starting a React app today, what would I standardize about state before reaching for any state library at all?*

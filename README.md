@@ -156,6 +156,14 @@ When a store is actually warranted:
 
 My preference: TanStack Query plus Zustand covers most apps; MobX earns its place when the domain logic itself is the hard part.
 
+### Where the default came from
+
+Flux was Facebook's answer to a specific bug: the unread-message counter kept going wrong because several parts of the app could write the same state. Redux (Dan Abramov, 2015) was then written for a React Europe talk on hot reloading and time-travel debugging — the strict single store and serializable actions exist because *those* are what make a state history replayable.
+
+Dan Abramov published "You Might Not Need Redux" the following year. The library's own author, within a year of it becoming the industry default, arguing that most apps adopting it did not have the problem it solved.
+
+Two things follow. The constraints in the Redux Toolkit row are not ceremony for its own sake — they buy the debugging property, and if you do not use that property you are paying the price without collecting. And a library becoming a default is not evidence it fits your app; Redux got there by being an excellent answer to a question most teams were not asking.
+
 ---
 
 ## MobX in depth
